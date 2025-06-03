@@ -15,7 +15,7 @@ func GenerateKey(outputDir string) error {
 		encryptionKeyRaw = append(encryptionKeyRaw, cryptoElement)
 	}
 
-	finalEncryptionKey := strings.Join(encryptionKeyRaw, ",")
+	finalEncryptionKey := strings.Join(encryptionKeyRaw, ",,")
 
 	keyfile, err := os.Create(fmt.Sprintf("%s/.key", outputDir))
 	if err != nil {
