@@ -11,7 +11,7 @@ func GenerateKey(outputDir string) error {
 	var encryptionKeyRaw []string
 
 	for key, value := range CharMap {
-		cryptoElement := fmt.Sprintf("%d=%s", value, key)
+		cryptoElement := fmt.Sprintf("%s=%d", key, value)
 		encryptionKeyRaw = append(encryptionKeyRaw, cryptoElement)
 	}
 
