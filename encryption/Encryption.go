@@ -1,27 +1,21 @@
-package main
+package encryption
 
 import (
-	"bufio"
 	"fmt"
 	"math/rand"
-	"os"
 )
 
-func Encryption(data string) ([]string, error) {
+func EncryptData(data string) ([]string, error) {
 
-	scanner := bufio.NewScanner(os.Stdin)
-	scanner.Scan()
-	data = scanner.Text()
-
-	for index, _ := range AlphabetNumberMap {
+	for index, _ := range CharMap {
 		randomNum := rand.Intn(1000)
-		AlphabetNumberMap[index] = randomNum
+		CharMap[index] = randomNum
 	}
 
 	var encrypted []string
 
 	for i, letter := range data {
-		num := AlphabetNumberMap[string(letter)]
+		num := CharMap[string(letter)]
 
 		encryptedLetter := fmt.Sprintf("%d", num)
 
