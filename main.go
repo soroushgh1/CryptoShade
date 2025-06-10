@@ -75,6 +75,26 @@ func main() {
 		finalDecrypt := strings.Join(decryptedList, "")
 
 		fmt.Println("Decrypted Data is : ", finalDecrypt)
+	case "-h":
+		var helpMessage string = `
 
+	CryptoShade: One time text encryption Program
+	
+
+	Usage:
+		cshade -e 		
+		Prompts the user for encryption.
+		
+
+		cshade -d
+		Prompts the user for decryption.
+	
+	More Info:
+		Github Repo: https://www.github.com/sorousgh1/cryptoshade
+	
+	Created by Soroush GH in Go programing language.
+ 	
+	`
+	fmt.Println(helpMessage)
 	}
 }
