@@ -90,7 +90,7 @@ func main() {
 		Prompts the user for decryption.
 	
 	More Info:
-		Github Repo: https://www.github.com/sorousgh1/cryptoshade
+		Github Repository: https://www.github.com/soroushgh1/CryptoShade
 	
 	Created by Soroush GH in Go programing language.
  	
